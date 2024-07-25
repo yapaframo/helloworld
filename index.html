@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Menu Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .menu {
+            display: inline-block;
+            text-align: left;
+        }
+        .menu-item {
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .menu-item:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <button class="menu-item" onclick="startGame()">Start Game</button>
+        <button class="menu-item" onclick="showOptions()">Options</button>
+        <button class="menu-item" onclick="exitGame()">Exit</button>
+    </div>
+
+    <script>
+        function startGame() {
+            alert('Starting the game...');
+        }
+
+        function showOptions() {
+            alert('Showing options...');
+        }
+
+        function exitGame() {
+            alert('Exiting the game...');
+        }
+    </script>
+</body>
+</html>
